@@ -2,8 +2,9 @@
 ## macOS command line utility for displaying a web view while simultaneously running a process
 It is written in Swift 3 and has been testedd and confirmed to work on macOs 10.12.6 up to 10.14.3
 
+[You can get the latest pre-built Trigger pkg from here](https://s3.amazonaws.com/taniacomputer/Trigger+v1.4.pkg) (pkg installs Trigger.app in /usr/local) 
 
-Usage:
+## Usage:
 
 >Trigger.app/Contents/MacOS/Trigger WEBVIEW_1 COMMAND_1 WEBVIEW_2 COMMAND_2 … [OPTIONS]
 
