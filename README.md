@@ -35,10 +35,12 @@ Note: Trigger assumes that the binary is in /usr/local/bin/jamf. Specify fullpat
 
 Trigger needs to be run as root to run jamf commands.
 
-**Example jamf commands:**
-“policy -trigger ‘microsoft office'”
-“policy -trigger vlc”
-“recon”
+**Example jamf commands:**. 
+>"policy -trigger ‘microsoft office'"  
+
+>'policy -trigger vlc'
+
+>recon
 
 **There is one special Trigger commands: wait** 
 
@@ -46,10 +48,10 @@ wait displays the webView until a particular link on the presented HTML.
 
 >Trigger.app/Contents/MacOS/Trigger WEBVIEW wait 
 
-What occurs once the link is clicked depends on the url:
-– A link to “next”, eg. <a href=”http://next”>NEXT</a>, makes Trigger proceed to the next web view/command pair.
-– A link to “formParse”, eg. <a href=”http://formParse”>Submit</a>, will inspect any form values and return the results to stdout. before proceeding to the next web view/command pair.
-– A link to “quit”, eg. <a href=”http://quit”>Done</a>, terminates Trigger.
+What occurs once the link is clicked depends on the url:  
+– A link to “next”, eg. <a href=”http://next”>NEXT</a>, makes Trigger proceed to the next web view/command pair.  
+– A link to “formParse”, eg. <a href=”http://formParse”>Submit</a>, will inspect any form values and return the results to stdout. before proceeding to the next web view/command pair.  
+– A link to “quit”, eg. <a href=”http://quit”>Done</a>, terminates Trigger.  
 Be sure to add http:// in the link URL (required by macOS 10.12.4+)
 
 ### COMMAND,NAME
