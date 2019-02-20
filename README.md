@@ -20,11 +20,11 @@ The command to execute. Command can be a shell command or a jamf binary command.
 
 **Example shell commands:** 
 
-“sleep 5”  
+'sleep 5'
 
-“/tmp/a_script.sh”
+'/tmp/a_script.sh'
 
-“/usr/sbin/installer -package ‘/tmp/CocoaDialog v2.1.1.pkg’ -target /”
+"/usr/sbin/installer -package ‘/tmp/CocoaDialog v2.1.1.pkg’ -target /"
 
 Note the single quotes to wrap around the filename with spaces.
 
@@ -44,7 +44,7 @@ Trigger needs to be run as root to run jamf commands.
 
 wait displays the webView until a particular link on the presented HTML.
 
-Trigger.app/Contents/MacOS/Trigger WEBVIEW wait 
+>Trigger.app/Contents/MacOS/Trigger WEBVIEW wait 
 
 What occurs once the link is clicked depends on the url:
 – A link to “next”, eg. <a href=”http://next”>NEXT</a>, makes Trigger proceed to the next web view/command pair.
@@ -88,4 +88,8 @@ Creates an output html file. All named commands have their results written to it
 ### EXAMPLES
 >/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/power_prompt.html wait --width 800 --height 600
 
->/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/installing_word.html "jamf policy -trigger 'word 2019'" --width 800 --height 600
+>/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/progress_wheel.html 'sleep 5'
+
+>/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/installing_word.html "jamf policy -trigger 'word 2019'" --width 800 --height 600 --blurry
+
+>/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/installing_word.html "/usr/sbin/installer -package '/tmp/CocoaDialog v2.1.1.pkg' -target /” --fullscreen
