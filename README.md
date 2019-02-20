@@ -5,7 +5,7 @@ It is written in Swift 3 and has been testedd and confirmed to work on macOs 10.
 
 Usage:
 
-**Trigger.app/Contents/MacOS/Trigger** WEBVIEW_1 COMMAND_1 WEBVIEW_2 COMMAND_2 … [OPTIONS]
+>Trigger.app/Contents/MacOS/Trigger WEBVIEW_1 COMMAND_1 WEBVIEW_2 COMMAND_2 … [OPTIONS]
 
 Trigger displays a web view while simultaneously executing a command. Once the command finishes executing Trigger moves on to the next web view/command pair.
 
@@ -84,3 +84,8 @@ Cannot be used in conjunction with –fullscreen.
 
 **-o, –output <output file fullpath>**
 Creates an output html file. All named commands have their results written to it.
+  
+### EXAMPLES
+>/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/power_prompt.html wait --width 800 --height 600
+
+>/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/installing_word.html "jamf policy -trigger 'word 2019'" --width 800 --height 600
