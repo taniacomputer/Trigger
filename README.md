@@ -1,6 +1,6 @@
 # Trigger
 ## macOS command line utility for displaying a web view while simultaneously running a process
-## It is written in Swift 3 and has been testedd and confirmed to work on macOs 10.12.6 up to 10.14.3
+It is written in Swift 3 and has been testedd and confirmed to work on macOs 10.12.6 up to 10.14.3
 
 
 Usage:
