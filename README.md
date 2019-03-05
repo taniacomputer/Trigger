@@ -50,15 +50,15 @@ wait displays the webView until a particular link on the presented HTML.
 >Trigger.app/Contents/MacOS/Trigger WEBVIEW wait 
 
 What occurs once the link is clicked depends on the url:  
-– A link to “next”, eg. <a href=”http://next”>NEXT</a>, makes Trigger proceed to the next web view/command pair.  
-– A link to “formParse”, eg. <a href=”http://formParse”>Submit</a>, will inspect any form values and return the results to stdout. before proceeding to the next web view/command pair.  
-– A link to “quit”, eg. <a href=”http://quit”>Done</a>, terminates Trigger.  
+– A link to "next", eg. `<a href=”http://next”>NEXT</a>`, makes Trigger proceed to the next web view/command pair.  
+– A link to "formParse", eg. `<a href=”http://formParse”>Submit</a>`, will inspect any form values and return the results to stdout. before proceeding to the next web view/command pair.  
+– A link to "quit", eg. `<a href=”http://quit”>Done</a>`, terminates Trigger.  
 Be sure to add http:// in the link URL (required by macOS 10.12.4+)
 
 ### COMMAND,NAME
-If an output file is specified (see ‘-o, –output’ option below), all named commands have their stdout and success status written to this file.
+If an output file is specified (see '-o, –output' option below), all named commands have their stdout and success status written to this file.
 A command is named by appending a comma followed by the name in quotations.
-eg. “policy -trigger mcafee”,”McAfee Security Agent”
+eg. "policy -trigger mcafee","McAfee Security Agent"
 
 ### OPTIONS
 **-t,–title <title>**
@@ -95,4 +95,4 @@ Creates an output html file. All named commands have their results written to it
 
 >/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/installing_word.html "jamf policy -trigger 'word 2019'" --width 800 --height 600 --blurry
 
->/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/installing_word.html "/usr/sbin/installer -package '/tmp/CocoaDialog v2.1.1.pkg' -target /” --fullscreen
+>/usr/local/Trigger.app/Contents/MacOS/Trigger --file /tmp/installing_word.html "/usr/sbin/installer -package '/tmp/CocoaDialog v2.1.1.pkg' -target /" --fullscreen
