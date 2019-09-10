@@ -92,8 +92,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 	}
     
 	func displayManPage() {
-		let singleIndent="\t\t"
-		let doubleIndent="\t\t\t\t"
         print("Usage:")
         print("Trigger.app/Contents/MacOS/Trigger WEBVIEW_1 COMMAND_1 WEBVIEW_2 COMMAND_2 … [OPTIONS]")
         print("Trigger displays a web view while simultaneously executing a command. Once the command finishes executing Trigger moves on to the next web view/command pair.")

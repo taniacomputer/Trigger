@@ -232,8 +232,6 @@ class CustomViewController: NSViewController, WKNavigationDelegate, WKUIDelegate
 		//let dir = NSURL(fileURLWithPath: "file://\(directory)")
         let fullPath = NSURL(fileURLWithPath: "\(fullPath)")
         let dir = NSURL(fileURLWithPath: "\(directory)")
-        print(fullPath)
-        print(dir)
 		if #available(OSX 10.11, *) {
 			self.webView.loadFileURL(fullPath as URL, allowingReadAccessTo: dir as URL)
 		} else {
